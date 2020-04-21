@@ -7,12 +7,16 @@
         {
             "type": "node",
             "request": "attach",
-            "name": "Attach Program",
+            "name": "Egg Attach to remote",
+            "address": "localhost",
+            "protocol": "auto",
+            "port": 9230,
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": "/usr/local/src/egg-demo",
             "skipFiles": [
                 "<node_internals>/**",
-                "node_module/egg"
+                "node_module/**"
             ],
-            "port": 9230
         }
     ]
 }
